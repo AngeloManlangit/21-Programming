@@ -1,5 +1,6 @@
 #include "markdownviewerdialog.h"
 #include "ui_markdownviewerdialog.h"
+#include <QIcon>
 
 MarkdownViewerDialog::MarkdownViewerDialog(QWidget *parent)
     : QDialog(parent)
@@ -8,6 +9,7 @@ MarkdownViewerDialog::MarkdownViewerDialog(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("Markdown Viewer");
+    setWindowIcon(QIcon(":/img/images/logo.png"));
 }
 
 MarkdownViewerDialog::~MarkdownViewerDialog()

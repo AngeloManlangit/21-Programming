@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/chap">
         <file>Chapters/Chapter1.md</file>
         <file>Chapters/Chapter2.md</file>
         <file>Chapters/Chapter3.md</file>
@@ -21,5 +21,19 @@
         <file>Chapters/Chapter19.md</file>
         <file>Chapters/Chapter20.md</file>
         <file>Chapters/Chapter21.md</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>images/logo.png</file>
+        <file>images/banner.png</file>
+        <file>images/Ch1_1.png</file>
+        <file>images/Ch1_2.png</file>
+        <file>images/Ch1_3.png</file>
+        <file>images/Ch1_4.png</file>
+        <file>images/Ch1_5.png</file>
+        <file>images/Ch1_6.png</file>
+        <file>images/Ch1_7.png</file>
+        <file>images/Ch1_8.png</file>
+        <file>images/Ch1_9.png</file>
+        <file>images/Ch2_1.png</file>
     </qresource>
 </RCC>

@@ -1,5 +1,6 @@
 #include "chaptermenu.h"
 #include "ui_chaptermenu.h"
+#include <QIcon>
 
 #include "markdownviewerdialog.h"   // to show the chapter markdwons
 #include <QFile>                    // for file operations
@@ -13,6 +14,7 @@ ChapterMenu::ChapterMenu(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("21 Programming - Select Chapter");
+    setWindowIcon(QIcon(":/img/images/logo.png"));
 }
 
 ChapterMenu::~ChapterMenu()
@@ -146,7 +148,7 @@ void ChapterMenu::on_ChapterBtn_21_clicked()
 }
 
 void ChapterMenu::openMarkdown(int chapter_num) {
-    QString filePath = QString(":/Chapters/Chapter") + QString::number(chapter_num) + ".md";
+    QString filePath = QString(":/chap/Chapters/Chapter") + QString::number(chapter_num) + ".md";
 
     QFile file(filePath);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
