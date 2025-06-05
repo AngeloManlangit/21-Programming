@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Chapters/Chapter1.md</file>
+        <file>Chapters/Chapter2.md</file>
+        <file>Chapters/Chapter3.md</file>
+        <file>Chapters/Chapter4.md</file>
+        <file>Chapters/Chapter5.md</file>
+        <file>Chapters/Chapter6.md</file>
+        <file>Chapters/Chapter7.md</file>
+        <file>Chapters/Chapter8.md</file>
+        <file>Chapters/Chapter9.md</file>
+        <file>Chapters/Chapter10.md</file>
+        <file>Chapters/Chapter11.md</file>
+        <file>Chapters/Chapter12.md</file>
+        <file>Chapters/Chapter13.md</file>
+        <file>Chapters/Chapter14.md</file>
+        <file>Chapters/Chapter15.md</file>
+        <file>Chapters/Chapter16.md</file>
+        <file>Chapters/Chapter17.md</file>
+        <file>Chapters/Chapter18.md</file>
+        <file>Chapters/Chapter19.md</file>
+        <file>Chapters/Chapter20.md</file>
+        <file>Chapters/Chapter21.md</file>
+    </qresource>
+</RCC>
