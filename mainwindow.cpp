@@ -6,6 +6,9 @@
 // for the chapter menu window
 #include "chaptermenu.h"
 
+// for the quiz dialog
+#include "quizdialog.h"
+
 #include <QFile>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -17,7 +20,9 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("21 Programming");
     setWindowIcon(QIcon(":/img/images/logo.png"));
 
-    /*int bannerw = ui->Banner->width();
+    /*
+    Not needed but just in case:
+    int bannerw = ui->Banner->width();
     int bannerh = ui->Banner->height();
 
     QPixmap banner(":/img/images/banner.png");
@@ -41,8 +46,22 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_LearnBtn_clicked()
 {
-    ChapterMenu chaptermenu;
+    ChapterMenu chaptermenu(this, false);
     chaptermenu.setModal(true);
     chaptermenu.exec();
+}
+
+
+void MainWindow::on_QuizBtn_clicked()
+{
+    ChapterMenu chaptermenu(this, true);
+    chaptermenu.setModal(true);
+    if (chaptermenu.exec() == QDialog::Accepted) {
+        int selectedChapter = chaptermenu.getSelectedChapter();
+        if (selectedChapter > 0) {
+            QuizDialog quiz(selectedChapter, this);
+            quiz.exec();
+        }
+    }
 }
 

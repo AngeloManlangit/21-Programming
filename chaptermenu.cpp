@@ -7,9 +7,11 @@
 #include <QTextStream>              // for reading text from a file
 #include <QMessageBox>              // for showing error messages
 
-ChapterMenu::ChapterMenu(QWidget *parent)
+ChapterMenu::ChapterMenu(QWidget *parent, bool isQuizMode)
     : QDialog(parent)
     , ui(new Ui::ChapterMenu)
+    , selectedChapter(0)
+    , quizMode(isQuizMode)
 {
     ui->setupUi(this);
 
@@ -34,129 +36,138 @@ ChapterMenu::~ChapterMenu()
     delete ui;
 }
 
+void ChapterMenu::handleChapterSelection(int chapter)
+{
+    selectedChapter = chapter;
+    if (quizMode) {
+        accept();
+    } else {
+        openMarkdown(chapter);
+    }
+}
 
 void ChapterMenu::on_ChapterBtn_1_clicked()
 {
-    openMarkdown(1);
+    handleChapterSelection(1);
 }
 
 void ChapterMenu::on_ChapterBtn_2_clicked()
 {
-    openMarkdown(2);
+    handleChapterSelection(2);
 }
 
 
 void ChapterMenu::on_ChapterBtn_3_clicked()
 {
-    openMarkdown(3);
+    handleChapterSelection(3);
 }
 
 
 void ChapterMenu::on_ChapterBtn_4_clicked()
 {
-    openMarkdown(4);
+    handleChapterSelection(4);
 }
 
 
 void ChapterMenu::on_ChapterBtn_5_clicked()
 {
-    openMarkdown(5);
+    handleChapterSelection(5);
 }
 
 
 void ChapterMenu::on_ChapterBtn_6_clicked()
 {
-    openMarkdown(6);
+    handleChapterSelection(6);
 }
 
 
 void ChapterMenu::on_ChapterBtn_7_clicked()
 {
-    openMarkdown(7);
+    handleChapterSelection(7);
 }
 
 
 void ChapterMenu::on_ChapterBtn_8_clicked()
 {
-    openMarkdown(8);
+    handleChapterSelection(8);
 }
 
 
 void ChapterMenu::on_ChapterBtn_9_clicked()
 {
-    openMarkdown(9);
+    handleChapterSelection(9);
 }
 
 
 void ChapterMenu::on_ChapterBtn_10_clicked()
 {
-    openMarkdown(10);
+    handleChapterSelection(10);
 }
 
 
 void ChapterMenu::on_ChapterBtn_11_clicked()
 {
-    openMarkdown(11);
+    handleChapterSelection(11);
 }
 
 
 void ChapterMenu::on_ChapterBtn_12_clicked()
 {
-    openMarkdown(12);
+    handleChapterSelection(12);
 }
 
 
 void ChapterMenu::on_ChapterBtn_13_clicked()
 {
-    openMarkdown(13);
+    handleChapterSelection(13);
 }
 
 
 void ChapterMenu::on_ChapterBtn_14_clicked()
 {
-    openMarkdown(14);
+    handleChapterSelection(14);
 }
 
 
 void ChapterMenu::on_ChapterBtn_15_clicked()
 {
-    openMarkdown(15);
+    handleChapterSelection(15);
 }
 
 
 void ChapterMenu::on_ChapterBtn_16_clicked()
 {
-    openMarkdown(16);
+    handleChapterSelection(16);
 }
 
 
 void ChapterMenu::on_ChapterBtn_17_clicked()
 {
-    openMarkdown(17);
+    handleChapterSelection(17);
 }
 
 
 void ChapterMenu::on_ChapterBtn_18_clicked()
 {
-    openMarkdown(18);
+    handleChapterSelection(18);
 }
 
 
 void ChapterMenu::on_ChapterBtn_19_clicked()
 {
-    openMarkdown(19);
+    handleChapterSelection(19);
 }
 
 
 void ChapterMenu::on_ChapterBtn_20_clicked()
 {
-    openMarkdown(20);
+    handleChapterSelection(20);
 }
 
 
 void ChapterMenu::on_ChapterBtn_21_clicked()
 {
-    openMarkdown(21);
+    handleChapterSelection(21);
 }
 
 void ChapterMenu::openMarkdown(int chapter_num) {

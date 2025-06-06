@@ -12,8 +12,9 @@ class ChapterMenu : public QDialog
     Q_OBJECT
 
 public:
-    explicit ChapterMenu(QWidget *parent = nullptr);
+    explicit ChapterMenu(QWidget *parent = nullptr, bool isQuizMode = false);
     ~ChapterMenu();
+    int getSelectedChapter() const { return selectedChapter; }
 
 private slots:
 
@@ -59,10 +60,16 @@ private slots:
 
     void on_ChapterBtn_21_clicked();
 
-    void openMarkdown(int chapter_num);
-
 private:
     Ui::ChapterMenu *ui;
+
+    int selectedChapter;
+
+    bool quizMode;
+
+    void openMarkdown(int chapter_num);
+
+    void handleChapterSelection(int chapter);
 };
 
 #endif // CHAPTERMENU_H

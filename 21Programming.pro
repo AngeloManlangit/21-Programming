@@ -12,17 +12,22 @@ SOURCES += \
     chaptermenu.cpp \
     main.cpp \
     mainwindow.cpp \
-    markdownviewerdialog.cpp
+    markdownviewerdialog.cpp \
+    quizdata.cpp \
+    quizdialog.cpp
 
 HEADERS += \
     chaptermenu.h \
     mainwindow.h \
-    markdownviewerdialog.h
+    markdownviewerdialog.h \
+    quizdata.h \
+    quizdialog.h
 
 FORMS += \
     chaptermenu.ui \
     mainwindow.ui \
-    markdownviewerdialog.ui
+    markdownviewerdialog.ui \
+    quizdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

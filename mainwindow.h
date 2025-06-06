@@ -20,6 +20,8 @@ public:
 private slots:
     void on_LearnBtn_clicked();
 
+    void on_QuizBtn_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
