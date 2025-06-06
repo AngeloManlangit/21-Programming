@@ -8,6 +8,9 @@ CONFIG += c++17
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+# for the icon
+RC_FILE = application.rc
+
 SOURCES += \
     chaptermenu.cpp \
     main.cpp \
@@ -37,6 +40,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     Chapters/Chapter1.md \
     Chapters/Chapter2.md \
+    application.rc \
     styles.qss
 
 RESOURCES += \
