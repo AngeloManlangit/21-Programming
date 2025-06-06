@@ -1,6 +1,5 @@
 # Chapter 2 - Introduction to C
-
-#####
+---
 
 ## What is C?
 &nbsp;&nbsp;&nbsp;&nbsp;

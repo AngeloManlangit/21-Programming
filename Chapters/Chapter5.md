@@ -1,6 +1,6 @@
 # Chapter 5 - Mathematical Operations in C
 
-#####
+---
 
 ## Arithmetic Operators
 

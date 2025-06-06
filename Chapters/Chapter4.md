@@ -1,6 +1,6 @@
 # Chapter 4 - Inputs and Outputs
 
-#####
+---
 
 ## Headers
 

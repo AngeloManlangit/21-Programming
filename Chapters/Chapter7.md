@@ -1,6 +1,6 @@
 # Chapter 7 - Loops
 
-#####
+---
 
 ## While loop
 

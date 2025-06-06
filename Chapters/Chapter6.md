@@ -1,6 +1,6 @@
 # Chapter 6 - Conditions
 
-#####
+---
 
 ## If-else statements
 

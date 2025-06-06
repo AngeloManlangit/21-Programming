@@ -1,6 +1,6 @@
 # Chapter 3 - C
 
-#####
+---
 
 ## Source Code and Compiler
 
