@@ -69,6 +69,10 @@ Sincerely,
 
 #####
 
+![The 21 Programming Team](:/img/images/Ch21_1.png)
+
+#####
+
 ---
 
 #####
