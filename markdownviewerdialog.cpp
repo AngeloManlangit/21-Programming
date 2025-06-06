@@ -19,7 +19,6 @@ MarkdownViewerDialog::~MarkdownViewerDialog()
 
 void MarkdownViewerDialog::setMarkdownContent(const QString &markdown)
 {
-    // Make sure the QTextBrowser object exists and is accessible
     if (ui->textBrowser) {
         ui->textBrowser->setMarkdown(markdown);
     }

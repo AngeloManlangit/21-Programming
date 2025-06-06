@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>950</width>
-    <height>600</height>
+    <width>960</width>
+    <height>640</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -21,7 +21,14 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QTextBrowser" name="textBrowser"/>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="autoFormatting">
+      <set>QTextEdit::AutoFormattingFlag::AutoNone</set>
+     </property>
+     <property name="markdown">
+      <string/>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
