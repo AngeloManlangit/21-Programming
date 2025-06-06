@@ -15,6 +15,18 @@ ChapterMenu::ChapterMenu(QWidget *parent)
 
     setWindowTitle("21 Programming - Select Chapter");
     setWindowIcon(QIcon(":/img/images/logo.png"));
+
+    // for the button styles
+    QFile styleFile(":/miscellaneous/styles.qss");
+
+    if (styleFile.open(QFile::ReadOnly | QFile::Text)) {
+        QString styleSheet = styleFile.readAll();
+        this->setStyleSheet(styleSheet); // Apply the stylesheet to the ChapterMenu dialog
+        styleFile.close();
+    } else {
+        qDebug() << "ERROR: Could not open stylesheet file: :/styles/chaptermenu_styles.qss";
+    }
+
 }
 
 ChapterMenu::~ChapterMenu()

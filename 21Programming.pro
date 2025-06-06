@@ -31,7 +31,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     Chapters/Chapter1.md \
-    Chapters/Chapter2.md
+    Chapters/Chapter2.md \
+    styles.qss
 
 RESOURCES += \
     Resources.qrc

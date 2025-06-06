@@ -42,4 +42,7 @@
         <file>images/Ch18_2.png</file>
         <file>images/Ch20_1.png</file>
     </qresource>
+    <qresource prefix="/miscellaneous">
+        <file>styles.qss</file>
+    </qresource>
 </RCC>
